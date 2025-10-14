@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pre-entrega de proyecto web de Gaglioti Juan Pedro. Página con galería, video y formulario responsivo.">
   <title>Pre-Entrega</title>
   <link rel="stylesheet" href="./css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -16,7 +16,7 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#novedades">Novedades</a></li>
         <li><a href="#informacion">Información</a></li>
-        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="#galeria">Galería</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -25,17 +25,84 @@
   <main>
     <section id="inicio" class="seccion">
       <h2>Bienvenido</h2>
-      <p>Este es la pre-entrega de mi web con HTML, CSS y diseño responsivo. Incluye una galería interactiva, un video y un formulario de contacto.</p>
+      <p>
+        Esta es la pre-entrega de mi sitio web con HTML, CSS y diseño responsivo. 
+        Incluye una galería de imágenes, un video de YouTube y un formulario de contacto.
+      </p>
     </section>
 
     <section id="novedades" class="seccion">
       <h2>Novedades</h2>
-      <p>En esta sección podrás encontrar las últimas actualizaciones, como por ejemplo en las ultimas clases estuvimos viendo JS</p>
+      <p>
+        Estamos trabajando en nuevos proyectos de diseño web y modelado 3D. 
+        Próximamente, añadiremos una sección de trabajos destacados con ejemplos interactivos.
+      </p>
     </section>
 
     <section id="informacion" class="seccion">
       <h2>Información</h2>
-      <p>Este sitio fue desarrollado como parte del curso de Front-End JS.</p>
+      <p>
+        Este proyecto forma parte de la cursada de Front-End JS. 
+        Fue desarrollado aplicando conceptos de maquetado con HTML, estilos con CSS, 
+        y diseño adaptable mediante Flexbox y Grid.
+      </p>
+    </section>
+
+    <section id="galeria" class="seccion">
+      <h2>Galería</h2>
+      <div class="galeria-contenedor">
+        <a href="#img1"><img src="./img/foto01.png" alt="Espacio Foto 1"></a>
+        <a href="#img2"><img src="./img/foto02.png" alt="Espacio Foto 2"></a>
+        <a href="#img3"><img src="./img/foto03.png" alt="Espacio Foto 3"></a>
+        <a href="#img4"><img src="./img/foto04.png" alt="Espacio Foto 4"></a>
+        <a href="#img5"><img src="./img/foto05.png" alt="Espacio Foto 5"></a>
+      </div>
+
+      <!-- Imágenes ampliadas -->
+      <div class="imagen-grande" id="img1">
+        <a href="#galeria" class="cerrar">×</a>
+        <a href="#img5" class="anterior">◀</a>
+        <img src="./img/foto01.png" alt="Foto 1">
+        <a href="#img2" class="siguiente">▶</a>
+      </div>
+
+      <div class="imagen-grande" id="img2">
+        <a href="#galeria" class="cerrar">×</a>
+        <a href="#img1" class="anterior">◀</a>
+        <img src="./img/foto02.png" alt="Foto 2">
+        <a href="#img3" class="siguiente">▶</a>
+      </div>
+
+      <div class="imagen-grande" id="img3">
+        <a href="#galeria" class="cerrar">×</a>
+        <a href="#img2" class="anterior">◀</a>
+        <img src="./img/foto03.png" alt="Foto 3">
+        <a href="#img4" class="siguiente">▶</a>
+      </div>
+
+      <div class="imagen-grande" id="img4">
+        <a href="#galeria" class="cerrar">×</a>
+        <a href="#img3" class="anterior">◀</a>
+        <img src="./img/foto04.png" alt="Foto 4">
+        <a href="#img5" class="siguiente">▶</a>
+      </div>
+
+      <div class="imagen-grande" id="img5">
+        <a href="#galeria" class="cerrar">×</a>
+        <a href="#img4" class="anterior">◀</a>
+        <img src="./img/foto05.png" alt="Foto 5">
+        <a href="#img1" class="siguiente">▶</a>
+      </div>
+
+      <div class="video">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/HIvqw74pCFc"
+          title="Video de YouTube"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
     </section>
 
     <section id="contacto" class="seccion">
@@ -56,7 +123,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Curso Front-end JS</p>
+    <p>© 2025 Curso Front-end JS - Gaglioti Juan Pedro</p>
   </footer>
 </body>
 </html>
